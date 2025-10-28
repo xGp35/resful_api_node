@@ -1,0 +1,5 @@
+Build a resful APi from Scratch
+-> In nodejs, express js is used to build restful APIs
+-> I will build the required api endpoints 
+-> Look at middleware and 
+-> Tools in the cloud for deploying my API like API Gateways.
