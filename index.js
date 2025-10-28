@@ -1,5 +1,8 @@
+const express = require('express');
 const app = require('express')();
 const PORT = 8080;
+
+app.use(express.json());  // Middleware to parse JSON bodies
 
 app.get('/boobies', (req, res) => {
     res.status(200).send({
@@ -28,5 +31,5 @@ app.post('/boobies/:id', (req, res) => {
 
 app.listen(
     PORT, 
-    () => console.log(`Server is running on http://localhost:${PORT}`)
+    () => console.log(`I'm alive !!! http://localhost:${PORT}`)
 );
