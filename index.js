@@ -4,17 +4,15 @@ const PORT = 8080;
 
 app.use(express.json());  // Middleware to parse JSON bodies
 
-app.get('/boobies', (req, res) => {
+app.get('/tshirt', (req, res) => {
     res.status(200).send({
-        message: "Boobies are great!",
-        size: "large",
-        shape: "round",
-        representation: "🍊"
+        message: "👕",
+        size: "medium",
     })
-    console.log("Boobies endpoint hit");
+    console.log("tshirt endpoint hit");
 });
 
-app.post('/boobies/:id', (req, res) => {
+app.post('/tshirt/:id', (req, res) => {
 
     const { id } = req.params;
     const { logo } = req.body;
